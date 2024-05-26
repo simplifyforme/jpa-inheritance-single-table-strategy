@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "8b0600ed-7bb6-4ddd-bae5-a71e7dcf6e3a",
+		"name": "SimplifyForMe Single Table Strategy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10311752"
+	},
+	"item": [
+		{
+			"name": "Create new Car Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"make\": \"Toyota\",\r\n  \"model\": \"chr\",\r\n  \"numberOfDoors\": 5,\r\n  \"hasSunroof\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/vehicles/car",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vehicles",
+						"car"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Truck Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"make\": \"Ford\",\r\n  \"model\": \"F-150\",\r\n  \"loadCapacity\": 1000.5,\r\n  \"hasTrailer\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/vehicles/truck",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vehicles",
+						"truck"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get All cars Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/vehicles/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vehicles",
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get All trucks Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/vehicles/trucks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vehicles",
+						"trucks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get All vehicules Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/vehicles/vehicles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vehicles",
+						"vehicles"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
